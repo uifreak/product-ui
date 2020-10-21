@@ -1,0 +1,18 @@
+{
+  "name": "products-ui",
+  "scripts": {
+    "test": "echo Installing dependancies and checking for vulnerabilities && npm install && echo Testing each individual file && node ./node_modules/eslint/bin/eslint.js **/*.js --ignore-pattern node_modules/ . && echo Finshed tests against all files. No tests failed.",
+    "start": "npm test && node server",
+    "server": "node server"
+  },
+  "author": "Santosh Raj <santoshdev0410@gmail.com>",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.12.0"
+  },
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
